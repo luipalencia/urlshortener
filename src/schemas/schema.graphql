@@ -1,0 +1,20 @@
+# Operaciones de consulta
+type Query {
+ hello: String
+}
+
+type Query {
+ health: String
+}
+
+# Operaciones de modificación tanto Crear, Actualizar y eliminar
+type Mutation {
+    add(input: NumbersInput): Float
+}
+
+# Elemento que se usa para simpificar la entrada de una definición
+# Como se puede ver, se usa en la definición "add" para introducir dos números
+input NumbersInput {
+    a: Float
+    b: Float
+}
